@@ -1,6 +1,7 @@
 radio.setTransmitPower(3)
 radio.setGroup(1)
 let eyeState = 0
+led.setBrightness(255)
 basic.forever(function () {
     radio.sendNumber(eyeState)
     if (eyeState == 0) {
